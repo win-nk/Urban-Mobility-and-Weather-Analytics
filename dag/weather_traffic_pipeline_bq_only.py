@@ -28,7 +28,7 @@ default_args = {
 with DAG(
     dag_id="weather_traffic_pipeline_bq_only",
     start_date=datetime(2025, 9, 8),
-    schedule_interval="0 * * * *",  
+    schedule_interval="*/15 * * * *",  
     catchup=False,
     default_args=default_args,
     max_active_runs=1,
