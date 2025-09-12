@@ -29,3 +29,6 @@ Airflow Directed Acyclic Graphs (DAG)
 - Data-quality checks (non-empty / recency) succeed per run
 - Secrets handled via Secret Manager; IAM scoped to GCS & BigQuery
 - No BI/dashboard layer included; outputs are query-ready tables for downstream use
+- weather_observations <img width="1678" height="47" alt="image" src="https://github.com/user-attachments/assets/8d3934d0-597b-413f-8970-aa44156ab188" />
+- traffic_observations <img width="1486" height="151" alt="image" src="https://github.com/user-attachments/assets/f9a435ac-7277-4c41-8a0e-34c027c63c7c" />
+
