@@ -8,8 +8,8 @@ from typing import List, Tuple
 import requests
 from google.cloud import storage, secretmanager
 
-PROJECT_ID = os.getenv("GCP_PROJECT", "famous-mix-471512-i3")
-RAW_BUCKET = os.getenv("RAW_BUCKET", "raw__js")
+PROJECT_ID = os.getenv("GCP_PROJECT")
+RAW_BUCKET = os.getenv("RAW_BUCKET")
 
 def _secret(secret_id: str) -> str:
     client = secretmanager.SecretManagerServiceClient()

@@ -8,9 +8,9 @@ from airflow.providers.google.cloud.transfers.gcs_to_bigquery import GCSToBigQue
 from airflow.providers.google.cloud.operators.bigquery import BigQueryInsertJobOperator, BigQueryCheckOperator
 
 # === Config ===
-PROJECT_ID = Variable.get("PROJECT_ID", default_var="famous-mix-471512-i3")
+PROJECT_ID = Variable.get("PROJECT_ID")
 BQ_DATASET = Variable.get("BQ_DATASET", default_var="dataset_weather_traffic")
-RAW_BUCKET = Variable.get("RAW_BUCKET", default_var="raw__js")
+RAW_BUCKET = Variable.get("RAW_BUCKET")
 
 # กำหนดเมืองและเส้นทางที่อยากเก็บ (แก้ได้ใน Airflow Variables ถ้าต้องการ)
 # ตัวอย่างค่า variable:
